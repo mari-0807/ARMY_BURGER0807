@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ARMY_BURGER" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">@color/rojo</item>
+        <item name="colorAccent">@color/naranjo</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
