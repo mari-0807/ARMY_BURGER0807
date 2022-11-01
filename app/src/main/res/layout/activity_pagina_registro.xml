@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EAE2D9"
     tools:context=".PaginaRegistro">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="478dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="Disfruta ARMYBURGER"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="298dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:gravity="center"
+                android:text="Podemos ayudarte a crearte una cuenta en unos sencillos pasos."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Button1"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270dp"
+                android:backgroundTint="@color/rojo"
+                android:gravity="center"
+                android:text="GET STARTED"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/Yatienescuenta"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="660dp"
+                android:backgroundTint="@color/rojo"
+                android:gravity="center"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

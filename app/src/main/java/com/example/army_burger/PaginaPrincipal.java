@@ -1,9 +1,12 @@
 package com.example.army_burger;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +20,30 @@ public class PaginaPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_principal);
+
+        Button btnAtras = (Button) findViewById(R.id.btnAtrás);
+        btnAtras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PaginaPrincipal.this, PaginaIniciarSesion.class));
+            }
+        });
+
+        Button btnInicio = (Button) findViewById(R.id.btnInicio);
+        btnInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PaginaPrincipal.this, PaginaPrincipal.class));
+            }
+        });
+
+        Button btnDomicilio = (Button) findViewById(R.id.button3);
+        btnDomicilio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PaginaPrincipal.this, PaginaDomicilio.class));
+            }
+        });
 
         recyclerViewCantante=(RecyclerView) findViewById(R.id.recyclerCantante);
         recyclerViewCantante.setLayoutManager(new LinearLayoutManager(this));
